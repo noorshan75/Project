@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>
+Assignment
+</title>
+</head>
+<body>
+<script type="text/javascript">
+ var N=prompt("Number of socks","");
+ let count=0;
+ var arr=new Array(N);
+ for(var i=0;i<N;i++){
+  arr[i]=prompt("Enter color of each socks","")
+ }
+ for(var i=0;i<arr.length-1;i++){
+  if(arr[i]==arr[i+1]){
+   count++;
+   i++;
+   }
+  else{
+  i++;
+ }
+ } 
+document.write("Number of Pairs for every unique color :"+count);
+</script>
+</body>
+</html>
